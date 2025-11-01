@@ -26,12 +26,35 @@ body {
     animation: spin 3s linear infinite;
   }
 
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+
+  .active\:scale-98:active {
+    transform: scale(0.98);
+  }
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }
