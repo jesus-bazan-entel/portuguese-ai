@@ -12,13 +12,13 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'px-6 py-3 rounded-xl font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'px-6 py-4 md:py-3 rounded-2xl font-bold text-white transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 text-base md:text-lg min-h-[52px] md:min-h-[48px]';
 
   const variants = {
-    primary: 'bg-green-500 hover:bg-green-600 active:scale-95',
-    secondary: 'bg-blue-500 hover:bg-blue-600 active:scale-95',
-    success: 'bg-emerald-500 hover:bg-emerald-600 active:scale-95',
-    danger: 'bg-red-500 hover:bg-red-600 active:scale-95',
+    primary: 'bg-green-500 hover:bg-green-600 shadow-lg active:shadow-md',
+    secondary: 'bg-blue-500 hover:bg-blue-600 shadow-lg active:shadow-md',
+    success: 'bg-emerald-500 hover:bg-emerald-600 shadow-lg active:shadow-md',
+    danger: 'bg-red-500 hover:bg-red-600 shadow-lg active:shadow-md',
   };
 
   const widthClass = fullWidth ? 'w-full' : '';
